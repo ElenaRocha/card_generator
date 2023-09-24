@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card generator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
+    <header>
+        <h1>Card Generator</h1>
+    </header>
+    <main>
+        <h2>Añadir un carnet</h2>
+        <!--es necesario completar todos los campos, y de lo contrario lanzar un aviso-->
+        <form action=" " method="post">
+        <!--añadir ruta de "action" para el formulario-->
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Nonmbre">
+                <label for="surname1">Primer apellido</label>
+                <input type="text" id="surname1" name="surname1" placeholder="Primer apellido">
+                <label for="surname2">Segundo apellido</label>
+                <input type="text" id="surname2" name="surname2" placeholder="Segundo apellido">
+            </div>
+            <div class="form-group">
+                <label for="ocupation">Profesión</label>
+                <input type="text" id="ocupation" name="ocupation" placeholder="¿A qué te dedicas?">
+            </div>
+            <!--¿Hacer que la fecha seleccionada sea automaticamente la de hoy?-->
+            <div class="form-group">
+                <label for="registration_date">¿Qué día te registraste?</label>
+                <input type="date" id="registration_date" name="registration_date">
+            </div>
+            <!--fecha de validez (1´5 años)-->
+            <div class="form-group">
+                <label for="expiratoin_date">¿Qué día caduca tu membresía?</label>
+                <input type="date" id="expiratoin_date" name="expiratoin_date">
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>¿Eres un usuario prefernete</legend>
+                </fieldset>
+                <div>
+                    <input type="radio" id="yes" name="vip" value="yes">
+                    <label for="yes">Sí</label>
+                    <input type="radio" id="no" name="vip" value="no">
+                    <label for="no">No</label>
+                </div>
+            </div>
+            <div>
+                <input type="submit" value="Añadir carnet">
+                <!--guardar información en un nuevo carnet-->
+            </div>
+        </form>
+        <h2>Mis carnets</h2>
+        <!--guardar carnets en el navegador-->
+        <!--añadir botón de borrar (papelera), con un mensaje de confirmación-->
+        <!--no es necesario, pero puedo añadir opción de editar-->
+    </main>
+    <footer>
+        <p>&copy; Elena Rocha 2023</p>
+    </footer>
 </body>
 </html>
