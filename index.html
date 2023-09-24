@@ -14,7 +14,7 @@
     <main>
         <h2>Añadir un carnet</h2>
         <!--es necesario completar todos los campos, y de lo contrario lanzar un aviso-->
-        <form action=" " method="post">
+        <form action="#" method="post">
         <!--añadir ruta de "action" para el formulario-->
             <div class="form-group">
                 <label for="name">Nombre</label>
@@ -41,13 +41,11 @@
             <div class="form-group">
                 <fieldset>
                     <legend>¿Eres un usuario prefernete</legend>
-                </fieldset>
-                <div>
                     <input type="radio" id="yes" name="vip" value="yes">
                     <label for="yes">Sí</label>
                     <input type="radio" id="no" name="vip" value="no">
                     <label for="no">No</label>
-                </div>
+                </fieldset>
             </div>
             <div>
                 <input type="submit" value="Añadir carnet">
@@ -58,6 +56,15 @@
         <!--guardar carnets en el navegador-->
         <!--añadir botón de borrar (papelera), con un mensaje de confirmación-->
         <!--no es necesario, pero puedo añadir opción de editar-->
+        <div>
+            <p id="name"></p>
+            <p id="surname1"></p>
+            <p id="surname2"></p>
+            <p id="ocupation"></p>
+            <p id="registration_date"></p>
+            <p id="expiratoin_date"></p>
+            <p id="vip"></p>
+        </div>
     </main>
     <footer>
         <p>&copy; Elena Rocha 2023</p>
